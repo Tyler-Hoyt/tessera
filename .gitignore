@@ -1,0 +1,6 @@
+*.swp
+*.swo
+tags
+.luarc.json
+.DS_Store
+.claude
