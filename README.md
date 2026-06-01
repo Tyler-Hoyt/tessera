@@ -7,6 +7,8 @@ script folders (`server_scripts`, `client_scripts`, `startup_scripts`), for
 datapacks and resourcepacks, and parses [ProbeJS](https://github.com/Prunoideae/ProbeJS)
 dumps to power pickers over registry IDs and event names.
 
+**Currently only tested on Neoforge 1.21.1**
+
 ## Requirements
 
 - Neovim 0.10+
@@ -20,7 +22,7 @@ With `lazy.nvim`:
 
 ```lua
 {
-  "Tyler-Hoyt/tessera.nvim",
+  "Tyler-Hoyt/tessera",
   dependencies = { "ibhagwan/fzf-lua" },
   cmd = "Tessera",
   config = function() require("tessera").setup{} end,
@@ -32,7 +34,7 @@ With `vim.pack`:
 ```lua
 vim.pack.add({
     {
-        src = "https://github.com/Tyler-Hoyt/tessera.nvim"
+        src = "https://github.com/Tyler-Hoyt/tessera"
     },
     {
         src = "https://github.com/ibhagwan/fzf-lua",
