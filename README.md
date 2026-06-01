@@ -20,11 +20,25 @@ With `lazy.nvim`:
 
 ```lua
 {
-  "your-handle/tessera.nvim",
+  "Tyler-Hoyt/tessera.nvim",
   dependencies = { "ibhagwan/fzf-lua" },
   cmd = "Tessera",
   config = function() require("tessera").setup{} end,
 }
+```
+
+With `vim.pack`:
+
+```lua
+vim.pack.add({
+    {
+        src = "https://github.com/Tyler-Hoyt/tessera.nvim"
+    },
+    {
+        src = "https://github.com/ibhagwan/fzf-lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    }
+})
 ```
 
 ## Commands
